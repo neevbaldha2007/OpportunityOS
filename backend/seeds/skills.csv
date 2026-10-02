@@ -1,0 +1,277 @@
+name,slug,category,aliases,is_verified
+React,react,frontend,reactjs;react.js;react,true
+JavaScript,javascript,frontend,js;ecmascript;javascript;vanilla js,true
+TypeScript,typescript,frontend,ts;typescript,true
+HTML,html,frontend,html5;html,true
+CSS,css,frontend,css3;css,true
+Tailwind CSS,tailwind-css,frontend,tailwind;tailwindcss;tailwind css,true
+Next.js,next-js,frontend,nextjs;next.js;next,true
+Vue.js,vue-js,frontend,vue;vuejs;vue.js;vue 3,true
+Angular,angular,frontend,angularjs;angular;angular 2+,true
+Redux,redux,frontend,redux;redux toolkit;rtk,true
+Sass,sass,frontend,scss;sass,true
+Bootstrap,bootstrap,frontend,bootstrap;bootstrap 5,true
+Vite,vite,frontend,vite;vitejs,true
+Webpack,webpack,frontend,webpack;webpack 5,true
+jQuery,jquery,frontend,jquery,true
+Svelte,svelte,frontend,svelte;sveltekit,true
+GraphQL,graphql,frontend,graphql;apollo,true
+REST API,rest-api,frontend,restful;rest api;rest apis;restful api;restful apis,true
+Responsive Design,responsive-design,frontend,responsive web design;mobile-friendly;responsive design,true
+WebSockets,websockets,frontend,websocket;websockets;socket.io,true
+Material UI,material-ui,frontend,mui;material ui;material-ui,true
+Chakra UI,chakra-ui,frontend,chakra;chakra ui,true
+Shadcn UI,shadcn-ui,frontend,shadcn;shadcn ui;shadcn/ui,true
+Styled Components,styled-components,frontend,styled-components;styled components,true
+Storybook,storybook,frontend,storybook,true
+Jest,jest,testing,jest;jest testing,true
+Cypress,cypress,testing,cypress;cypress.io,true
+Playwright,playwright,testing,playwright,true
+Vitest,vitest,testing,vitest,true
+React Testing Library,react-testing-library,testing,rtl;react testing library;react-testing-library,true
+PyTest,pytest,testing,pytest;py.test,true
+JUnit,junit,testing,junit;junit5,true
+Selenium,selenium,testing,selenium;selenium webdriver,true
+Postman,postman,testing,postman;postman api,true
+Python,python,backend,python;python3;py,true
+Django,django,backend,django;django rest framework;drf,true
+FastAPI,fastapi,backend,fastapi;fast api,true
+Flask,flask,backend,flask,true
+Node.js,node-js,backend,nodejs;node.js;node,true
+Express.js,express-js,backend,express;expressjs;express.js,true
+NestJS,nestjs,backend,nest;nestjs;nest.js,true
+Java,java,backend,java;core java;java 8;java 11;java 17,true
+Spring Boot,spring-boot,backend,spring boot;spring-boot;spring framework;spring,true
+C#,c-sharp,backend,c#;csharp;c sharp,true
+.NET,.net,backend,.net;.net core;asp.net;dotnet,true
+C++,cpp,backend,c++;cpp,true
+C,c,backend,c programming;c language,true
+Go,go,backend,golang;go,true
+Rust,rust,backend,rust;rustlang,true
+PHP,php,backend,php;php8,true
+Laravel,laravel,backend,laravel,true
+Ruby,ruby,backend,ruby,true
+Ruby on Rails,ruby-on-rails,backend,rails;ruby on rails,true
+Microservices,microservices,backend,microservices;microservice architecture;micro-services,true
+gRPC,grpc,backend,grpc,true
+Celery,celery,backend,celery,true
+RabbitMQ,rabbitmq,backend,rabbitmq,true
+Apache Kafka,apache-kafka,backend,kafka;apache kafka,true
+PostgreSQL,postgresql,database,postgres;postgresql;psql,true
+MySQL,mysql,database,mysql;my sql,true
+SQLite,sqlite,database,sqlite;sqlite3,true
+MongoDB,mongodb,database,mongo;mongodb,true
+Redis,redis,database,redis;redis cache,true
+Elasticsearch,elasticsearch,database,elastic;elasticsearch;opensearch,true
+Firebase,firebase,database,firebase;firestore;firebase auth,true
+Supabase,supabase,database,supabase,true
+Cassandra,cassandra,database,cassandra;apache cassandra,true
+DynamoDB,dynamodb,database,dynamo;dynamodb;aws dynamodb,true
+Prisma,prisma,database,prisma;prisma orm,true
+SQLAlchemy,sqlalchemy,database,sqlalchemy,true
+SQL,sql,database,sql;structured query language;rdbms,true
+NoSQL,nosql,database,nosql;no-sql,true
+Database Design,database-design,database,db design;database schema;normalization;indexing,true
+Docker,docker,devops_cloud,docker;containerization;docker compose;dockerfile,true
+Kubernetes,kubernetes,devops_cloud,k8s;kubernetes;kubectl,true
+AWS,aws,devops_cloud,amazon web services;aws;ec2;s3;lambda,true
+Azure,azure,devops_cloud,microsoft azure;azure,true
+Google Cloud,google-cloud,devops_cloud,gcp;google cloud platform;google cloud,true
+CI/CD,ci-cd,devops_cloud,ci/cd;continuous integration;continuous deployment;pipelines,true
+Git,git,devops_cloud,git;version control,true
+GitHub,github,devops_cloud,github;gh,true
+GitLab,gitlab,devops_cloud,gitlab,true
+Linux,linux,devops_cloud,linux;unix;ubuntu;debian;bash;shell,true
+Nginx,nginx,devops_cloud,nginx,true
+Terraform,terraform,devops_cloud,terraform;iac;infrastructure as code,true
+Ansible,ansible,devops_cloud,ansible,true
+GitHub Actions,github-actions,devops_cloud,github actions;gh actions,true
+Prometheus,prometheus,devops_cloud,prometheus,true
+Grafana,grafana,devops_cloud,grafana,true
+Machine Learning,machine-learning,data_ai,ml;machine learning;supervised learning,true
+Deep Learning,deep-learning,data_ai,dl;deep learning;neural networks;cnn;rnn,true
+PyTorch,pytorch,data_ai,pytorch;torch,true
+TensorFlow,tensorflow,data_ai,tensorflow;tf;keras,true
+Pandas,pandas,data_ai,pandas,true
+NumPy,numpy,data_ai,numpy,true
+Scikit-learn,scikit-learn,data_ai,scikit-learn;sklearn;scikit learn,true
+Computer Vision,computer-vision,data_ai,cv;computer vision;image processing,true
+Natural Language Processing,nlp,data_ai,nlp;natural language processing;text processing,true
+Large Language Models,llms,data_ai,llm;llms;large language models;generative ai;genai,true
+LangChain,langchain,data_ai,langchain,true
+Hugging Face,hugging-face,data_ai,huggingface;hugging face;transformers,true
+Data Analysis,data-analysis,data_ai,data analysis;eda;exploratory data analysis,true
+Data Visualization,data-visualization,data_ai,data visualization;dataviz,true
+Power BI,power-bi,data_ai,power bi;powerbi,true
+Tableau,tableau,data_ai,tableau,true
+Matplotlib,matplotlib,data_ai,matplotlib,true
+Seaborn,seaborn,data_ai,seaborn,true
+OpenCV,opencv,data_ai,opencv;cv2,true
+R,r-lang,data_ai,r;r programming;r language,true
+Data Science,data-science,data_ai,data science;data scientist,true
+Big Data,big-data,data_ai,big data;hadoop;spark;pyspark,true
+Apache Spark,apache-spark,data_ai,spark;apache spark;pyspark,true
+ETL,etl,data_ai,etl;data pipeline;data warehousing;extract transform load,true
+React Native,react-native,mobile,react native;react-native,true
+Flutter,flutter,mobile,flutter,true
+Dart,dart,mobile,dart;dartlang,true
+Android,android,mobile,android;android sdk;android development,true
+iOS,ios,mobile,ios;ios development,true
+Swift,swift,mobile,swift;swiftui,true
+Kotlin,kotlin,mobile,kotlin;android kotlin,true
+Jetpack Compose,jetpack-compose,mobile,jetpack compose;compose,true
+Figma,figma,design,figma;figma design,true
+UI/UX Design,ui-ux-design,design,ui/ux;ui design;ux design;product design,true
+Wireframing,wireframing,design,wireframing;wireframes;mockups,true
+Prototyping,prototyping,design,prototyping;interactive prototype,true
+User Research,user-research,design,user research;usability testing,true
+Adobe XD,adobe-xd,design,adobe xd;xd,true
+Data Structures,data-structures,cs_fundamentals,data structures;dsa;arrays;linked list;trees;graphs,true
+Algorithms,algorithms,cs_fundamentals,algorithms;sorting;searching;dynamic programming,true
+Object-Oriented Programming,oop,cs_fundamentals,oop;oops;object oriented programming,true
+System Design,system-design,cs_fundamentals,system design;high level design;hld;lld,true
+Operating Systems,operating-systems,cs_fundamentals,operating systems;os concepts;multithreading;concurrency,true
+Computer Networks,computer-networks,cs_fundamentals,computer networks;cn;tcp/ip;http;https;dns,true
+Database Management Systems,dbms,cs_fundamentals,dbms;rdbms concepts;acid properties;transactions,true
+Cybersecurity,cybersecurity,security,cybersecurity;information security;infosec,true
+OAuth,oauth,security,oauth;oauth2;oauth 2.0;jwt;authentication;authorization,true
+Penetration Testing,penetration-testing,security,pen testing;penetration testing;ethical hacking,true
+OWASP,owasp,security,owasp;owasp top 10;web security,true
+Cryptography,cryptography,security,cryptography;encryption;ssl;tls,true
+Problem Solving,problem-solving,soft_skills,problem solving;troubleshooting;analytical thinking,true
+Communication,communication,soft_skills,verbal communication;written communication;presentation,true
+Teamwork,teamwork,soft_skills,teamwork;collaboration;cross-functional,true
+Agile,agile,soft_skills,agile;agile methodology,true
+Scrum,scrum,soft_skills,scrum;sprints;standup,true
+Project Management,project-management,soft_skills,project management;task management;jira;trello,true
+Critical Thinking,critical-thinking,soft_skills,critical thinking;reasoning,true
+Time Management,time-management,soft_skills,time management;organization,true
+API Development,api-development,backend,api development;web services;api design,true
+Serverless,serverless,devops_cloud,serverless;aws lambda;cloud functions,true
+Vector Databases,vector-databases,data_ai,vector database;pinecone;weaviate;chroma;qdrant;faiss,true
+Prompt Engineering,prompt-engineering,data_ai,prompt engineering;prompt design,true
+Linux Command Line,linux-cli,devops_cloud,command line;terminal;cli;bash scripting;shell scripting,true
+JWT,jwt,security,jwt;json web token;token authentication,true
+State Management,state-management,frontend,state management;flux;zustand;recoil;mobx,true
+Tailwind,tailwind,frontend,tailwind;tailwindcss,true
+Zustand,zustand,frontend,zustand,true
+TanStack Query,tanstack-query,frontend,react query;tanstack query;react-query,true
+Axios,axios,frontend,axios;http client,true
+Semantic HTML,semantic-html,frontend,semantic html;accessibility;a11y,true
+Web Performance,web-performance,frontend,web performance;core web vitals;optimization,true
+SEO,seo,frontend,seo;search engine optimization,true
+PWA,pwa,frontend,progressive web app;pwa,true
+Unit Testing,unit-testing,testing,unit test;unit tests;unit testing,true
+Integration Testing,integration-testing,testing,integration test;integration testing,true
+End-to-End Testing,e2e-testing,testing,e2e;end-to-end testing;e2e test,true
+Code Review,code-review,soft_skills,code review;pr review;pull requests,true
+Debugging,debugging,soft_skills,debugging;troubleshooting;profiling,true
+Technical Documentation,technical-documentation,soft_skills,documentation;technical writing;readme;api docs,true
+Web Scraping,web-scraping,data_ai,scraping;web scraping;beautifulsoup;scrapy;puppeteer,true
+Data Cleaning,data-cleaning,data_ai,data cleaning;data preprocessing;data wrangling,true
+Feature Engineering,feature-engineering,data_ai,feature engineering;feature extraction,true
+Model Evaluation,model-evaluation,data_ai,model evaluation;cross-validation;auc-roc;precision-recall,true
+Model Deployment,model-deployment,data_ai,mlops;model deployment;onnx;torchscript;fastapi ml,true
+Fine-Tuning,fine-tuning,data_ai,fine-tuning;lora;qlora;peft,true
+RAG,rag,data_ai,rag;retrieval augmented generation;retrieval-augmented generation,true
+Cloudflare,cloudflare,devops_cloud,cloudflare;cdn;cloudflare workers,true
+Vercel,vercel,devops_cloud,vercel;deployment,true
+Render,render,devops_cloud,render;render.com,true
+Railway,railway,devops_cloud,railway;railway.app,true
+Heroku,heroku,devops_cloud,heroku,true
+GraphQL Apollo,graphql-apollo,frontend,apollo client;apollo server,true
+WebRTC,webrtc,frontend,webrtc;real-time communication,true
+OAuth2,oauth2,security,oauth2;oauth 2.0;sso;single sign on,true
+Bcrypt,bcrypt,security,bcrypt;password hashing,true
+CORS,cors,security,cors;cross-origin resource sharing,true
+HTTPS,https,security,https;ssl;tls certificates,true
+Database Indexing,db-indexing,database,indexing;b-tree;query optimization,true
+SQL Joins,sql-joins,database,joins;inner join;left join;group by;aggregations,true
+Redis Caching,redis-caching,database,caching;cache invalidation;ttl,true
+GraphQL Queries,graphql-queries,frontend,graphql mutations;graphql queries;schema,true
+Webpack Configuration,webpack-config,frontend,bundlers;bundling;asset management,true
+Code Splitting,code-splitting,frontend,lazy loading;code splitting;dynamic imports,true
+CSS Grid,css-grid,frontend,css grid;grid layout,true
+Flexbox,flexbox,frontend,flexbox;flex layout,true
+DOM Manipulation,dom-manipulation,frontend,dom;virtual dom;event handling,true
+Local Storage,local-storage,frontend,localstorage;sessionstorage;cookies;browser storage,true
+Async Programming,async-programming,backend,async/await;promises;event loop;concurrency,true
+Thread Safety,thread-safety,cs_fundamentals,threads;locks;mutex;deadlock;synchronization,true
+Memory Management,memory-management,cs_fundamentals,garbage collection;pointers;stack;heap,true
+Design Patterns,design-patterns,cs_fundamentals,factory;singleton;observer;strategy;builder,true
+SOLID Principles,solid-principles,cs_fundamentals,solid;single responsibility;clean code,true
+Clean Architecture,clean-architecture,cs_fundamentals,clean architecture;hexagonal;onion architecture,true
+REST Principles,rest-principles,backend,idempotency;http verbs;status codes;hateoas,true
+Data Modeling,data-modeling,database,er diagram;entity relationship;cardinality,true
+Database Migrations,database-migrations,database,alembic;flyway;schema migrations;db migrations,true
+Search Engines,search-engines,backend,full text search;fts;lucence;serpapi,true
+API Gateways,api-gateways,devops_cloud,api gateway;kong;reverse proxy;traefik,true
+Load Balancing,load-balancing,devops_cloud,load balancer;load balancing;round robin,true
+Monitoring,monitoring,devops_cloud,observability;logging;metrics;tracing;sentry,true
+Error Tracking,error-tracking,devops_cloud,sentry;datadog;bugsnag,true
+Web Security,web-security,security,xss;csrf;sql injection;sanitization,true
+Input Validation,input-validation,security,pydantic;joi;zod;validation schemas,true
+Environment Variables,env-vars,devops_cloud,dotenv;secrets management;12-factor app,true
+Package Managers,package-managers,devops_cloud,npm;yarn;pnpm;pip;poetry;cargo,true
+Virtual Environments,virtual-environments,backend,venv;virtualenv;conda,true
+Shell Scripting,shell-scripting,devops_cloud,bash;powershell;shell scripts;sh,true
+Markdown,markdown,soft_skills,markdown;documentation formatting,true
+Git Branching,git-branching,devops_cloud,git flow;feature branching;git rebase;merge conflicts,true
+Stakeholder Management,stakeholder-management,soft_skills,stakeholder communication;requirements gathering,true
+Self Learning,self-learning,soft_skills,self learning;curiosity;research,true
+Adaptability,adaptability,soft_skills,adaptability;flexibility;fast learner,true
+LlamaIndex,llamaindex,data_ai,llama-index;llamaindex;gpt-index,true
+Ollama,ollama,data_ai,ollama;local llm;local models,true
+ChromaDB,chromadb,database,chroma;chromadb;chroma db,true
+Qdrant,qdrant,database,qdrant;vector search engine,true
+Milvus,milvus,database,milvus;zilliz,true
+Apache Airflow,apache-airflow,data_ai,airflow;apache airflow;dag,true
+Apache Flink,apache-flink,backend,flink;apache flink;stream processing,true
+ClickHouse,clickhouse,database,clickhouse;olap database;columnar database,true
+TimescaleDB,timescaledb,database,timescale;timescaledb;time-series db,true
+Neo4j,neo4j,database,neo4j;graph database;cypher,true
+Redis Streams,redis-streams,backend,redis streams;redis stream,true
+OpenTelemetry,opentelemetry,devops_cloud,otel;opentelemetry;distributed tracing,true
+ArgoCD,argocd,devops_cloud,argo cd;argocd;gitops,true
+Helm,helm,devops_cloud,helm charts;helm;kubernetes package manager,true
+Istio,istio,devops_cloud,service mesh;istio;envoy proxy,true
+Datadog,datadog,devops_cloud,datadog;apm;metrics collection,true
+ELK Stack,elk-stack,devops_cloud,elk;elasticsearch logstash kibana;elastic stack,true
+Astro,astro,frontend,astro;astrojs;astro.build,true
+Remix,remix,frontend,remix;remix run;remixjs,true
+SolidJS,solidjs,frontend,solid;solidjs;solid.js,true
+Three.js,three-js,frontend,threejs;three.js;webgl 3d,true
+WebGL,webgl,frontend,webgl;canvas 3d;opengl es,true
+Jotai,jotai,frontend,jotai;atomic state;state management,true
+Zod,zod,backend,zod;schema validation;typescript validation,true
+tRPC,trpc,backend,trpc;end-to-end typesafe apis,true
+Drizzle ORM,drizzle-orm,backend,drizzle;drizzle orm;typescript orm,true
+SQLModel,sqlmodel,backend,sqlmodel;fastapi orm,true
+Pydantic,pydantic,backend,pydantic;pydantic v2;data validation,true
+Alembic,alembic,database,alembic;sqlalchemy migrations,true
+SwiftUI,swiftui,mobile,swiftui;ios declarative ui,true
+Kotlin Multiplatform,kotlin-multiplatform,mobile,kmp;kmm;kotlin multiplatform,true
+Expo,expo,mobile,expo;react native expo;expo go,true
+Capacitor,capacitor,mobile,ionic capacitor;capacitor;cross-platform mobile,true
+Burp Suite,burp-suite,security,burp;burp suite;web pen testing,true
+Wireshark,wireshark,security,wireshark;packet capture;network analyzer,true
+SIEM,siem,security,siem;security information and event management;splunk,true
+Identity and Access Management,iam,security,iam;rbac;access control;abac,true
+vLLM,vllm,data_ai,vllm;pagedattention;llm inference,true
+Sentence Transformers,sentence-transformers,data_ai,sentence transformers;sbert;text embeddings,true
+XGBoost,xgboost,data_ai,xgboost;gradient boosting;extreme gradient boosting,true
+LightGBM,lightgbm,data_ai,lightgbm;gbm;gradient boosting machine,true
+LangSmith,langsmith,data_ai,langsmith;llm evaluation;prompt tracing,true
+Speech Recognition,speech-recognition,data_ai,whisper;asr;audio processing;tts,true
+Reinforcement Learning,reinforcement-learning,data_ai,rl;reinforcement learning;rlhf;q-learning,true
+Apache Hadoop,apache-hadoop,data_ai,hadoop;hdfs;mapreduce,true
+dbt,dbt,database,dbt;data build tool;analytics engineering,true
+Snowflake,snowflake,database,snowflake;cloud data warehouse;snowsql,true
+BigQuery,bigquery,database,google bigquery;bigquery;cloud data warehouse,true
+Databricks,databricks,data_ai,databricks;lakehouse;pyspark notebook,true
+Locust,locust,testing,locust;load testing;performance testing,true
+k6,k6,testing,k6;grafana k6;stress testing,true
+GraphQL Subscriptions,graphql-subscriptions,backend,graphql subscriptions;realtime graphql,true
+WebAssembly,webassembly,frontend,wasm;webassembly,true
+Server-Sent Events,server-sent-events,backend,sse;server-sent events;eventstream,true
+Continuous Deployment,continuous-deployment,devops_cloud,cd;automated release;blue green deployment,true
