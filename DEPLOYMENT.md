@@ -21,6 +21,22 @@ repository. Review the service and database plans before applying it. The
 Python 3.12 is selected by `.python-version`. The default CORS list is empty
 until the actual frontend origin is added in step 4.
 
+### Use the database already created in My Workspace
+
+The existing `opportunityos-db` is in Singapore. Use
+`render.existing-db.yaml` to deploy just the backend and reference that database
+automatically, without copying its secret connection URL.
+
+1. In Render, choose **New > Blueprint** and connect `neevbaldha2007/OpportunityOS`.
+2. Select branch `codex/hosting-ready-20261010` and set **Blueprint Path** to
+   `render.existing-db.yaml`.
+3. Confirm the workspace is **My Workspace**, then deploy the Blueprint.
+
+This file defines one free Python web service in Singapore and no new database.
+It generates the JWT secret and allows the assigned Vercel production origin,
+`https://opportunityos-omega.vercel.app`. Once the backend is live, continue
+with the frontend deployment using its actual URL.
+
 For manual creation, create PostgreSQL and a Python Web Service in the same
 region. Use these settings for the web service:
 
