@@ -121,6 +121,42 @@ def test_auth_and_profile_flow():
     assert p_data["career_goal"]["target_role"] == "Frontend Developer"
 
 
+def test_onboarding_profile_without_education_can_be_saved_and_updated():
+    registration = client.post(
+        "/auth/register",
+        json={
+            "full_name": "Onboarding Tester",
+            "email": "onboarding-education@example.com",
+            "password": "OnboardingPassword123!",
+        },
+    )
+    assert registration.status_code == 201
+    headers = {"Authorization": f"Bearer {registration.json()['access_token']}"}
+    payload = {
+        "profile": {
+            "experience_level": "student",
+            "location_city": "Ahmedabad",
+            "open_to_remote": True,
+            "weekly_learning_hours": 12,
+        },
+        "skills": [{"name": "JavaScript", "proficiency": 3}],
+        "career_goal": {"target_role": "Frontend Developer"},
+    }
+    saved = client.put("/profile", headers=headers, json=payload)
+    assert saved.status_code == 200
+    assert saved.json()["profile_complete"] is True
+    assert saved.json()["profile"]["education_level"] == "other"
+
+    payload["profile"]["education_level"] = "bachelors"
+    assert client.put("/profile", headers=headers, json=payload).status_code == 200
+    payload["profile"]["education_level"] = None
+    updated = client.put("/profile", headers=headers, json=payload)
+    assert updated.status_code == 200
+    persisted = client.get("/profile", headers=headers)
+    assert persisted.status_code == 200
+    assert persisted.json()["profile"]["education_level"] == "bachelors"
+
+
 def test_scorer_determinism():
     res = score_opportunity(
         opportunity_skills=[

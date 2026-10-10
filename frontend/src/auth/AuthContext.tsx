@@ -91,15 +91,52 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, [token]);
 
   const loginAsDemo = async () => {
+    let authData: AuthResponse;
     try {
-      await login('mitva@example.com', 'DemoPass123!');
-    } catch (e) {
+      authData = await login('mitva@example.com', 'DemoPass123!');
+    } catch (error: any) {
+      if (error.code !== 'UNAUTHORIZED') throw error;
       try {
-        await login('riya@example.com', 'DemoPass123!');
-      } catch {
-        const reg = await register('Mitva Satani', 'mitva@example.com', 'DemoPass123!');
-        saveAuth(reg);
+        authData = await login('riya@example.com', 'DemoPass123!');
+      } catch (fallbackError: any) {
+        if (fallbackError.code !== 'UNAUTHORIZED') throw fallbackError;
+        try {
+          authData = await register('Mitva Satani', 'mitva@example.com', 'DemoPass123!');
+        } catch (registrationError: any) {
+          if (registrationError.code !== 'CONFLICT') throw registrationError;
+          authData = await login('mitva@example.com', 'DemoPass123!');
+        }
       }
+    }
+
+    if (!authData.profile_complete) {
+      await apiClient.put('/profile', {
+        profile: {
+          education_level: 'bachelors',
+          degree: 'B.Tech',
+          field_of_study: 'Computer Science',
+          graduation_year: 2027,
+          experience_level: 'student',
+          location_city: 'Ahmedabad',
+          location_state: 'Gujarat',
+          location_country: 'IN',
+          open_to_remote: true,
+          weekly_learning_hours: 15,
+        },
+        skills: [
+          { name: 'HTML', proficiency: 4 },
+          { name: 'CSS', proficiency: 3 },
+          { name: 'JavaScript', proficiency: 3 },
+        ],
+        career_goal: {
+          target_role: 'Frontend Developer',
+          goal_statement: 'Secure a frontend developer internship before graduation',
+          timeline_months: 3,
+          opportunity_types: ['internship'],
+        },
+      });
+      setProfileComplete(true);
+      await apiClient.post('/agent/search', { include_news: false });
     }
   };
 
