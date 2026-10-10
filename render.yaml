@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: opportunityos-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: API_PREFIX
+        value: ""
+      - key: DEMO_MODE
+        value: "true"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: opportunityos-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRE_MINUTES
+        value: 1440
+      - key: CORS_ORIGINS
+        # Add the actual Vercel production origin in Render after deploying
+        # the frontend. No browser origins are enabled until then.
+        value: "[]"
+      - key: LOG_LEVEL
+        value: INFO
+
+databases:
+  - name: opportunityos-db
+    databaseName: opportunityos
+    user: opportunityos
