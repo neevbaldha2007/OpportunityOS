@@ -40,10 +40,10 @@ def get_profile_response(user: User, db: Session) -> ProfileResponse:
 
     profile_complete = (
         profile is not None
-        and bool(profile.education_level)
         and (bool(profile.location_city) or profile.open_to_remote)
         and len(skill_items) > 0
         and active_goal is not None
+        and bool(active_goal.target_role)
     )
 
     return ProfileResponse(
@@ -76,7 +76,9 @@ def update_profile(
         profile = UserProfile(user_id=current_user.id)
         db.add(profile)
 
-    profile.education_level = req.profile.education_level
+    # Onboarding does not ask for education; retain an existing value or use
+    # the schema's neutral category instead of writing NULL to a required field.
+    profile.education_level = req.profile.education_level or profile.education_level or "other"
     profile.degree = req.profile.degree
     profile.field_of_study = req.profile.field_of_study
     profile.graduation_year = req.profile.graduation_year

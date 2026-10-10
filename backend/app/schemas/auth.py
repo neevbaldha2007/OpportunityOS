@@ -22,6 +22,8 @@ class UserRegisterRequest(BaseModel):
     @field_validator("password")
     @classmethod
     def validate_password_strength(cls, v: str) -> str:
+        if len(v.encode("utf-8")) > 72:
+            raise ValueError("Password is too long; please use a shorter password")
         if not (any(c.isalpha() for c in v) and any(c.isdigit() for c in v)):
             raise ValueError("Password must contain at least one letter and one digit")
         return v
